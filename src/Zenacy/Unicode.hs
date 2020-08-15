@@ -6,6 +6,18 @@
 {-# LANGUAGE ScopedTypeVariables #-}
 
 -- | Tools to check and prepare data to be parsed as valid unicode.
+--
+-- The following is an example of converting dubious data to a text.
+--
+-- > textDecode :: ByteString -> Text
+-- > textDecode b =
+-- >   case bomStrip b of
+-- >     (Nothing, s)           -> T.decodeUtf8 $ unicodeCleanUTF8 s -- Assume UTF8
+-- >     (Just BOM_UTF8, s)     -> T.decodeUtf8 $ unicodeCleanUTF8 s
+-- >     (Just BOM_UTF16_BE, s) -> T.decodeUtf16BE s
+-- >     (Just BOM_UTF16_LE, s) -> T.decodeUtf16LE s
+-- >     (Just BOM_UTF32_BE, s) -> T.decodeUtf32BE s
+-- >     (Just BOM_UTF32_LE, s) -> T.decodeUtf32LE s
 module Zenacy.Unicode
   ( BOM(..)
   , bomStrings
