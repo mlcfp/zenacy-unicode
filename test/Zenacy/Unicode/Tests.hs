@@ -6,6 +6,9 @@ module Zenacy.Unicode.Tests
   ) where
 
 import Zenacy.Unicode
+import Data.Monoid
+  ( (<>)
+  )
 import Test.Framework
   ( Test
   , testGroup
