@@ -1,6 +1,6 @@
 # Zenacy Unicode
 
-[![Linux build status](https://img.shields.io/travis/mlcfp/zenacy-unicode/master.svg?label=Linux%20build)](https://travis-ci.org/mlcfp/zenacy-unicode)
+[![Linux build status](https://img.shields.io/travis/com/mlcfp/zenacy-unicode?label=Linux%20build)](https://travis-ci.org/mlcfp/zenacy-unicode)
 
 Zenacy Unicode includes tools for checking byte order marks (BOM) and
 cleaning data to remove invalid bytes.  These tools can help ensure that
