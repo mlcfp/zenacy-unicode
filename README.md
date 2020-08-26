@@ -1,6 +1,6 @@
 # Zenacy Unicode
 
-[![Linux build status](https://img.shields.io/travis/com/mlcfp/zenacy-unicode?label=Linux%20build)](https://travis-ci.org/mlcfp/zenacy-unicode)
+[![linux-shield][]][linux-build]
 
 Zenacy Unicode includes tools for checking byte order marks (BOM) and
 cleaning data to remove invalid bytes.  These tools can help ensure that
@@ -19,3 +19,6 @@ textDecode b =
     (Just BOM_UTF32_BE, s) -> T.decodeUtf32BE s
     (Just BOM_UTF32_LE, s) -> T.decodeUtf32LE s
 ```
+
+[linux-shield]: https://img.shields.io/travis/com/mlcfp/zenacy-unicode?label=Linux%20build
+[linux-build]: https://travis-ci.org/mlcfp/zenacy-unicode
