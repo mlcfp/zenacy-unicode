@@ -1,5 +1,5 @@
 cabal-version: >= 1.10
-version: 1.0.0
+version: 1.0.1
 name:
   zenacy-unicode
 synopsis:
@@ -19,7 +19,7 @@ author:
 maintainer:
   Michael Williams <mlcfp@icloud.com>
 copyright:
-  Copyright (C) 2015-2020 Michael P Williams
+  Copyright (C) 2015-2021 Michael P Williams
 category:
   Web
 build-type:
@@ -38,7 +38,7 @@ library
     Zenacy.Unicode
   build-depends:
     base              == 4.*,
-    bytestring        >= 0.10.6.0 && < 0.11,
+    bytestring        >= 0.10.6.0 && < 0.12,
     vector            >= 0.11 && < 0.13,
     word8             >= 0.1.2 && < 0.2
 
