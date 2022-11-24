@@ -2,7 +2,11 @@
 #
 #-------------------------------------------------------------------------------
 
-resolver: lts-16.31
+#resolver: nightly-2022-11-24
+resolver: lts-20.1
 
 #nix:
 #  enable: true
+
+#extra-deps:
+#  - vector-0.13.0.0
